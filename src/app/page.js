@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from  './Header/page'
 import Hero from './component/Hero'
-
+import GetInTouch from './component/GetInTouch'
 
 export default function Home() {
   return (
     <div>
         
-        <Header/>
+
         <Hero/>
+        <GetInTouch />
   
     </div>
   );

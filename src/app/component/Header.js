@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 const Header = () => {
     return (
-        <div className="relative bg-gray-900 text-white" >
+        <div className="relative bg-[#1D1D1D] text-white" >
           <header className="p-6 flex justify-between items-center">
             <Image width={150} height={150} src="/Layer_1.png" alt="Barotopa Logo" className="h-12" />
             <nav>

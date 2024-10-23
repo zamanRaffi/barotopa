@@ -4,17 +4,19 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('Exhibition.png')" }}
+      className=""
+     
     >
     
-      <div className="relative h-full px-6 text-white">
+      <div className="relative min-h-screen bg-cover bg-center px-4 text-white mb-3"
+        style={{ backgroundImage: "url('Exhibition.png')" }}
+      >
        
-        <div className="absolute right-4 top-[13.5rem]">
+        <div className="absolute right-4 top-[12.8rem]">
           <Image
             src="/Frame _1171277434.png"
             alt="Barotopa Printers Limited Logo"
-            width={176}
+            width={210}
             height={117}
            
           />
@@ -23,23 +25,24 @@ const Hero = () => {
        
 
         {/* Title and Description */}
-        <h1 className=" absolute bottom-[13.5rem] text-4xl font-extrabold mb-4 leading-tight">
-          Excellence in <br /> Printing & Packaging
+        <h1 className=" absolute top-[37.8rem] text-3xl font-extrabold">
+          Excellence in <br /> printing & packaging
         </h1>
-        <p className="absolute bottom-[6rem] text-xl mb-8 max-w-xl">
+        <p className="absolute top-[45rem] text-2xl text-[#bfbfbf]">
           We help your business stand out with superior printing services that blend
           creativity, quality, and precision.
         </p>
 
-        <div className="absolute inset-0 top-[44rem] bg-black/50"></div>
+        {/* <div className="absolute inset-0 top-[-10rem] bg-black/60"></div> */}
 
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-black font-semibold px-5 py-3 rounded-full flex justify-evenly absolute bottom-[4rem]"
+       <div className='text-black absolute top-[52.5rem] text-sm'>
+       <button
+          className="bg-blue-400 hover:bg-blue-500 rounded-full px-5 py-4 font-semibold flex items-center"
         >
           <span className='text-white'>Tell us what to print</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 bg-white rounded-full ml-4"
+            className="h-8 w-8 bg-white rounded-full p-2 ml-2"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -48,19 +51,25 @@ const Hero = () => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
+       </div>
       </div>
 
-      {/* Bottom Text */}
-      <div className='px-6' >
+       
+        {/* Bottom Text */}
+        <div className='px-6' >
         <p className="text-white text-2xl font-bold py-6">
           Barotopa Printers Limited is a reliable Press for your complete printing
           needs, serving with persistence and precision.
         </p>
 
-        <p className='text-gray-400 text-lg'>
-        We are introducing our personnel, culture and capabilities that make our organization unique. Barotopa Printers Limited, a core of idea and innovation which is a dream project of the Board of Directors of Panjeree Publications Limited. Our core exists on a total of 2,42,960 sft land area including production line. We are one-stop-solutions for all your planning, printing and other allied tasks. For keeping world class quality.
+        <p className='text-[#bfbfbf] text-xl'>
+        We are introducing our personnel, culture 
+        and capabilities that make our organization unique. Barotopa Printers Limited, a core of idea and innovation which is a dream project of the Board of Directors of Panjeree Publications Limited. Our core exists on a total of 2,42,960 sft land area including production line. We are one-stop-solutions for all your planning, printing and other allied tasks. For keeping world class quality.
         </p>
       </div>
+
+
+     
     </section>
   );
 };
