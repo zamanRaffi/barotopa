@@ -11,7 +11,7 @@ export default function WhyWeAre() {
     >
       <div className="bg-opacity-50 p-4 rounded-md max-w-md mx-auto">
         {/* Heading */}
-        <h2 className="text-5xl font-bold mb-8">Why we are</h2>
+        <h2 className="text-4xl font-bold mb-8">Why we are</h2>
 
         {/* List of items */}
         <ul className="space-y-3 mb-6">
@@ -28,12 +28,12 @@ export default function WhyWeAre() {
           <img
             src="/WhyWeAre_1.png"
             alt="Sample 1"
-            className="rounded-md mt-2  w-11/12"
+            className=" mt-2 w-full"
           />
           <img
             src="/WhyWeAre_2.png" 
             alt="Sample 2"
-            className="rounded-md mt-12 w-11/12"
+            className="mt-12 ml-2 w-full"
           />
         </div>
       </div>

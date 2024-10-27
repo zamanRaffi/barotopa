@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './component/Hero'
-import GetInTouch from './component/GetInTouch'
+
 import MissionAndVision from './component/MissionAndVision';
 import OperatingPrinciples from './component/OperatingPrinciples';
 import Management from './component/Management';
@@ -15,7 +15,7 @@ export default function Home() {
         <Management/>
         <OperatingPrinciples/>
         <WhyWeAre/>
-        <GetInTouch />
+       
   
     </div>
   );
