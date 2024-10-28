@@ -11,7 +11,7 @@ const Hero = () => {
         style={{ backgroundImage: "url('Exhibition.png')" }}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90"></div>
 
         {/* Logo */}
         <div className="sm:mt-[215px] flex justify-end z-10">

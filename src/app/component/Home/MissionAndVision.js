@@ -11,14 +11,14 @@ const MissionAndVision = () => {
           <Image
             src="/missionLogo.png"
             alt="Mission Icon"
-            width={60}
+            width={70}
             height={60}
             className="rounded-lg"
           />
           </div>
           <h2 className="text-4xl font-semibold">Our Mission</h2>
         </div>
-        <p className="max-w-md mt-4 text-[#797979]">
+        <p className="mt-4 text-[#797979]">
           “Our mission at Barotopa Printing & Packaging Limited is to provide unparalleled one-stop
           printing and packaging solutions characterized by excellence and innovation. We are committed
           to delivering superior quality and fostering enduring client relationships through unwavering
@@ -43,7 +43,7 @@ const MissionAndVision = () => {
           <Image
             src="/visionLogo.png"
             alt="VisionLogo Icon"
-            width={60}
+            width={70}
             height={60}
             className="rounded-lg shadow-md"
           />
