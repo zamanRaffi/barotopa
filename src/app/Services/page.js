@@ -1,11 +1,13 @@
 import React from 'react'
-import PrintingSolution from '../component/PrintingSolution'
-import Packaging from '../component/Packaging'
-import GraphicsDesignConsultancy from '../component/GraphicsDesignConsultancy'
+import PrintingSolution from '../component/Services/PrintingSolution'
+import Packaging from '../component/Services/Packaging'
+import GraphicsDesignConsultancy from '../component/Services/GraphicsDesignConsultancy'
+import Hero from '../component/Services/Hero'
 
 const page = () => {
   return (
     <div>
+      <Hero/>
       <Packaging/>
       <PrintingSolution/>
       <GraphicsDesignConsultancy/>

@@ -6,7 +6,7 @@ import { LuArrowDownToLine, LuMapPin } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <footer className="text-white px-5 lg:px-12 lg:text-xl">
+    <footer  id="footer" className="text-white px-5 lg:px-12 lg:text-xl">
 
      
 

@@ -3,15 +3,18 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section>
+    <section className="relative text-white mb-3 flex flex-col">
 
-      {/* Background Section */}
+      {/* Background Section with Gradient Overlay */}
       <div
-        className="relative min-h-screen bg-cover bg-center px-4 text-white mb-3 flex flex-col "
+        className="relative  px-4  min-h-screen bg-cover bg-center flex flex-col"
         style={{ backgroundImage: "url('Exhibition.png')" }}
       >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80"></div>
+
         {/* Logo */}
-        <div className="sm:mt-[13rem] flex justify-end ">
+        <div className="sm:mt-[215px] flex justify-end z-10">
           <Image
             src="/Frame _1171277434.png"
             alt="Barotopa Printers Limited Logo"
@@ -21,7 +24,7 @@ const Hero = () => {
         </div>
 
         {/* Title and Description */}
-        <div className="sm:mt-[14.4rem] mb-4">
+        <div className="sm:mt-[260px] mb-4 z-10">
           <h1 className="text-3xl font-extrabold">
             Excellence in <br /> printing & packaging
           </h1>
@@ -32,7 +35,7 @@ const Hero = () => {
         </div>
 
         {/* Button */}
-        <div>
+        <div className="z-10">
           <button className="bg-[#00aeef] hover:bg-[#33bef2] rounded-full px-5 py-4 font-semibold flex items-center text-black mt-2">
             <span className="text-white text-lg">Tell us what to print</span>
             <svg

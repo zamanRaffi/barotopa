@@ -28,17 +28,14 @@ const Header = () => {
         {/* Desktop Menu Links */}
         <nav className="sm:hidden md:flex space-x-8 items-center">
           <Link href="/" className="hover:text-[#797979]">Home</Link>
-          <div className="relative group">
             <Link href="/Services" className="hover:text-[#797979]">Services</Link>
-            {/* Dropdown */}
-            <div className="absolute left-0 hidden mt-2 w-40 bg-red-700 text-white py-2 rounded-md shadow-lg group-hover:block">
-              <Link href="/service1" className="block px-4 py-2 hover:bg-gray-700">Service 1</Link>
-              <Link href="/service2" className="block px-4 py-2 hover:bg-gray-700">Service 2</Link>
-              <Link href="/service3" className="block px-4 py-2 hover:bg-gray-700">Service 3</Link>
-            </div>
-          </div>
-          <Link href="/OurResources" className="hover:text-[#797979]">Our Resources</Link>
+          <Link href="/OurResources" className="hover:text-[#797979]">Resources</Link>
+          <Link href="/Infrastructure" className="hover:text-[#797979]">Infrastructure</Link>
           <Link href="/Accreditation" className="hover:text-[#797979]">Accreditation</Link>
+          <Link href="#footer" scroll={true} className="bg-[#00aeef] text-white px-6 py-2 rounded-full hover:text-black">
+  Contact us
+</Link>
+
         </nav>
       </header>
 
@@ -46,16 +43,9 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[rgba(29,29,29,0.9)] text-white p-4 flex flex-col space-y-4">
           <Link href="/" onClick={toggleMobileMenu} className="hover:text-[#797979]">Home</Link>
-          <div>
             <Link href="/Services" className="hover:text-[#797979]">Services</Link>
-            {/* Dropdown for Services */}
-            <div className="ml-4 mt-2 flex flex-col space-y-2">
-              <Link href="/service1" onClick={toggleMobileMenu} className="hover:text-[#797979]">Service 1</Link>
-              <Link href="/service2" onClick={toggleMobileMenu} className="hover:text-[#797979]">Service 2</Link>
-              <Link href="/service3" onClick={toggleMobileMenu} className="hover:text-[#797979]">Service 3</Link>
-            </div>
-          </div>
           <Link href="/OurResources" onClick={toggleMobileMenu} className="hover:text-[#797979]">Our Resources</Link>
+          <Link href="/Infrastructure" className="hover:text-[#797979]">Infrastructure</Link>
           <Link href="/accreditation" onClick={toggleMobileMenu} className="hover:text-[#797979]">Accreditation</Link>
         </div>
       )}
