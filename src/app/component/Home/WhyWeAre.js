@@ -4,7 +4,7 @@ import { CheckIcon } from '@heroicons/react/outline';
 export default function WhyWeAre() {
   return (
     <div
-      className="bg-cover bg-center text-white py-10 px-4 md:px-8 md:px-16"
+      className="bg-cover bg-center text-white py-10 px-4 mb-14 md:px-16 "
       style={{
         backgroundImage: "url('/Exhibition.png')",
       }}
