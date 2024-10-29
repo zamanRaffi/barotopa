@@ -34,7 +34,7 @@ const GraphicsDesignConsultancy = () => {
     <p className='w-3/5 text-[#797979] text-md mt-5'>
     A proof (sample) of the final design is provided to the customer for approval before mass production. Any corrections or...
     </p>
-    <Link className="bg-[#00aeef] text-white px-6 py-2 rounded-full hover:text-black hover:bg-[#33bef2]">
+    <Link href="#footer" className="bg-[#00aeef] text-white px-6 py-2 rounded-full hover:text-black hover:bg-[#33bef2]">
   Read More
 </Link>
     </div>

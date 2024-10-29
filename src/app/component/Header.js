@@ -28,7 +28,7 @@ const Header = () => {
         {/* Desktop Menu Links */}
         <nav className="sm:hidden md:flex space-x-8 items-center">
           <Link href="/" className="hover:text-[#797979]">Home</Link>
-            <Link href="/Services" className="hover:text-[#797979]">Services</Link>
+           <Link href="/Services" className="hover:text-[#797979]">Services</Link>
           <Link href="/Resources" className="hover:text-[#797979]">Resources</Link>
           <Link href="/Infrastructure" className="hover:text-[#797979]">Infrastructure</Link>
           <Link href="/Accreditation" className="hover:text-[#797979]">Accreditation</Link>
@@ -43,7 +43,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[rgba(29,29,29,0.9)] text-white p-4 flex flex-col space-y-4">
           <Link href="/" onClick={toggleMobileMenu} className="hover:text-[#797979]">Home</Link>
-            <Link href="/Services" onClick={toggleMobileMenu} className="hover:text-[#797979]">Services</Link>
+          <Link href="/Services" onClick={toggleMobileMenu} className="hover:text-[#797979]">Services</Link>
           <Link href="/Resources" onClick={toggleMobileMenu} className="hover:text-[#797979]">Resources</Link>
           <Link href="/Infrastructure" onClick={toggleMobileMenu} className="hover:text-[#797979]">Infrastructure</Link>
           <Link href="/Accreditation" onClick={toggleMobileMenu} className="hover:text-[#797979]">Accreditation</Link>
