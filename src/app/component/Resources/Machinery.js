@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const Machinery = () => {
   return (
     <div className='px-6 py-10'>
@@ -56,9 +57,12 @@ className='w-[884px]'
       </div>
       </div>
       <div className="flex justify-center mt-8">
-        <button className='bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-32 py-2 md:w-40'>
+      <Link href='/Machinery'>
+      <button className='bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-32 py-2 md:w-40'>
           See All
         </button>
+      
+      </Link>
       </div>
     </div>
   )

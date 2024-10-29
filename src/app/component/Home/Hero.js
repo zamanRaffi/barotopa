@@ -53,7 +53,9 @@ const Hero = () => {
 
       {/* Bottom Text */}
       <div className="px-6 mt-8 md:w-9/12 md:mx-auto md:mt-24 md:mb-20">
-  <p className="text-white text-2xl font-bold py-6 md:w-1/2">
+
+      <h1 className='text-[#00aeef] text-4xl mt-4 mb-3 md:text-7xl md:mb-14'>About Barotopa</h1>
+  <p className="text-white text-xl font-bold py-6 md:w-1/2 md:text-2xl md:py-0">
     Barotopa Printers Limited is a reliable Press for your complete printing
     needs, serving with persistence and precision.
   </p>
