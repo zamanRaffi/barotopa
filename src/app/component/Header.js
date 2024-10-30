@@ -11,7 +11,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <div className="bg-inherit text-white w-full">
+    <div className="bg-[rgba(29,29,29,0.5)] text-white w-full">
       <header className="p-6 flex justify-between items-center">
         <Image width={150} height={150} src="/Layer_1.png" alt="Barotopa Logo" className="h-12" />
 

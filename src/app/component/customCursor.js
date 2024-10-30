@@ -53,7 +53,7 @@ const CustomCursor = () => {
       className={`pointer-events-none fixed top-0 left-0 z-50 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-150 ${
         isHidden ? 'opacity-0' : 'opacity-100'
       }`}
-      style={{ width: '20px', height: '20px' }}
+      style={{ width: '18px', height: '18px' }}
     >
       {/* Inline SVG for the custom cursor with white color */}
       <svg
