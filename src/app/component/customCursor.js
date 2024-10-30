@@ -13,22 +13,21 @@ const CustomCursor = () => {
     const handleMouseMove = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      setIsHidden(false); // Ensure cursor shows when mouse moves within the viewport
     };
     document.addEventListener('mousemove', handleMouseMove);
 
     // Smooth cursor movement
     const animateCursor = () => {
-      cursorX += (mouseX - cursorX) * 0.35;
-      cursorY += (mouseY - cursorY) * 0.35;
+      cursorX += (mouseX - cursorX) * 0.45;
+      cursorY += (mouseY - cursorY) * 0.45;
       cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
       requestAnimationFrame(animateCursor);
     };
     animateCursor();
 
-    // Hide cursor on interactive elements
-    const handleMouseEnterInteractive = () => setIsHidden(true);
-    const handleMouseLeaveInteractive = () => setIsHidden(false);
+    // Hide custom cursor on interactive elements
+    const handleMouseEnter = () => setIsHidden(true);
+    const handleMouseLeave = () => setIsHidden(false);
 
     // Select all elements that should hide the custom cursor
     const pointerElements = document.querySelectorAll(
@@ -36,28 +35,33 @@ const CustomCursor = () => {
     );
 
     pointerElements.forEach((el) => {
-      el.addEventListener('mouseenter', handleMouseEnterInteractive);
-      el.addEventListener('mouseleave', handleMouseLeaveInteractive);
+      el.addEventListener('mouseenter', handleMouseEnter);
+      el.addEventListener('mouseleave', handleMouseLeave);
     });
 
-    // Hide cursor when leaving the viewport
+    // Hide custom cursor when leaving the viewport
     const handleMouseLeaveViewport = (e) => {
-      if (e.clientY <= 0 || e.clientX <= 0 || e.clientX >= window.innerWidth || e.clientY >= window.innerHeight) {
+      if (
+        e.clientY <= 0 || // Top
+        e.clientX <= 0 || // Left
+        e.clientX >= window.innerWidth || // Right
+        e.clientY >= window.innerHeight // Bottom
+      ) {
         setIsHidden(true);
-      } else {
-        setIsHidden(false);
       }
     };
 
-    document.addEventListener('mouseout', handleMouseLeaveViewport);
+    document.addEventListener('mouseleave', handleMouseLeaveViewport);
+    document.addEventListener('mouseenter', () => setIsHidden(false)); // Show on re-enter
 
     // Cleanup event listeners
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseout', handleMouseLeaveViewport);
+      document.removeEventListener('mouseleave', handleMouseLeaveViewport);
+      document.removeEventListener('mouseenter', () => setIsHidden(false));
       pointerElements.forEach((el) => {
-        el.removeEventListener('mouseenter', handleMouseEnterInteractive);
-        el.removeEventListener('mouseleave', handleMouseLeaveInteractive);
+        el.removeEventListener('mouseenter', handleMouseEnter);
+        el.removeEventListener('mouseleave', handleMouseLeave);
       });
     };
   }, []);
