@@ -18,8 +18,23 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  cursor: none;
+  cursor: none !important;
 }
+
+
+
+/* for Custom Cursor */
+
+#custom-cursor {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  transition: transform 0.1s ease;
+}
+
+
+
+
 /* For WebKit Browsers (Chrome, Safari, Edge) */
 *::-webkit-scrollbar {
   width: 200px; /* Scrollbar width */
@@ -44,12 +59,3 @@ body {
   scrollbar-color: #a18cd1 #ff9a9e; /* Thumb color and track color */
 }
 
-
-/* for Custom Cursor */
-
-#custom-cursor {
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  transition: transform 0.1s ease;
-}
