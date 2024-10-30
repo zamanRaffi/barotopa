@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import GetInTouch from "./component/GetInTouch";
+import CustomCursor from "./component/customCursor"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
+        <CustomCursor />
         {children}
         <GetInTouch/>
         <Footer/>

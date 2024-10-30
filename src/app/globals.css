@@ -18,5 +18,38 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
+}
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  width: 200px; /* Scrollbar width */
+}
 
+*::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #ff9a9e, #fad0c4); /* Track gradient */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a18cd1, #fbc2eb); /* Thumb gradient */
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9e768f, #f67280); /* Hover effect */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a18cd1 #ff9a9e; /* Thumb color and track color */
+}
+
+
+/* for Custom Cursor */
+
+#custom-cursor {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  transition: transform 0.1s ease;
 }

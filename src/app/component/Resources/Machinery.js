@@ -42,6 +42,8 @@ className='w-[884px]'
 
 </div>
 
+
+     {/* Moblie view - grid layout */}
       <div className="mb-8 md:hidden">
           <Image
             src="/Mechinery.png"
@@ -58,10 +60,9 @@ className='w-[884px]'
       </div>
       <div className="flex justify-center mt-8">
       <Link href='/Machinery'>
-      <button className='bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-32 py-2 md:w-40'>
-          See All
-        </button>
-      
+      <button className='bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-32 py-2 md:w-40 hover:bg-[#2c2c2c] hover:border-[#00c7f0] transition duration-200'>
+  See All
+</button>      
       </Link>
       </div>
     </div>

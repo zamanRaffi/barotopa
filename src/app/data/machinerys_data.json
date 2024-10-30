@@ -1,0 +1,96 @@
+[
+    {
+      "id": "1",
+      "unit": "03",
+      "title": "Polar Cutting Machine (Programmed)",
+      "slug": "polar-cutting-machine-programmed",
+      "image": "/Machinery_1ForLs.png",
+      "location": "Model: 1986, Origin: Germany",
+      "size": "40\",56\""
+    },
+    {
+      "id": "2",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-4-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    },
+    {
+      "id": "3",
+      "unit": "03",
+      "title": "Heidelberg SORD Single Color",
+      "slug": "heidelberg-sord-single-color",
+      "image": "/Machinery_1ForLs.png",
+      "location": "Model: 1995, Origin: Germany",
+      "capacity": "10,000 sheets per hour"
+    },
+    {
+      "id": "4",
+      "unit": "03",
+      "title": "Web Printing Machine Single Color",
+      "slug": "web-printing-machine-single-color",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Brand: Prakash, Origin: India",
+      "capacity": "40,000 prints per hour"
+    },
+    {
+      "id": "5",
+      "unit": "03",
+      "title": "Die cutting Machine Automatic with Foil",
+      "slug": "die-cutting-machine-automatic-with-foil",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Heidelberg, Model : 206, Origin : Germany",
+      "size": "23”” x 36”",
+      "capacity": "8,000 sheets per hour"
+    },
+    {
+      "id": "6",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-5-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    },
+    {
+      "id": "7",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-6-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    },
+    {
+      "id": "8",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-7-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    },
+    {
+      "id": "9",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-8-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    }
+    ,
+    {
+      "id": "10",
+      "unit": "03",
+      "title": "Komori 4 Color Printing Machine",
+      "slug": "komori-9-color-printing-machine",
+      "image": "/Machinery_2ForLs.png",
+      "location": "Model: 2001, Origin: Japan",
+      "capacity": "15,000 sheets per hour"
+    }
+    
+    
+  ]

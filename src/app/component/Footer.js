@@ -117,7 +117,10 @@ const Footer = () => {
       {/* Footer bottom */}
       <div className="text-[#474747]">
         <hr className="mb-6 border-b-1 border-[#272727] w-[29rem] md:w-full" />
+        <div className='flex justify-between'>
         <p className="mb-4 text-sm md:text-xl">&copy; 2024 Barotopa Printers Ltd. All Rights Reserved.</p>
+        <p className="mb-4 text-sm md:text-xl sm:hidden md:block">Privacy Policy</p>
+        </div>
       </div>
     </footer>
   );

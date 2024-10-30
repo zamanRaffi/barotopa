@@ -4,7 +4,7 @@ import { CheckIcon } from '@heroicons/react/outline';
 export default function WhyWeAre() {
   return (
     <div
-      className="bg-cover bg-center text-white py-10 px-4 mb-14 md:px-16 "
+      className="bg-cover bg-center text-white py-10 px-6 mb-14 md:px-16 "
       style={{
         backgroundImage: "url('/Exhibition.png')",
       }}
@@ -22,7 +22,7 @@ export default function WhyWeAre() {
               <li key={index} className="flex items-center text-[#797979] text-xl md:text-xl">
                 <CheckIcon className="w-5 h-5 md:w-9 md:h-11 text-yellow-400 mr-2" />
                 <span className="block md:hidden">A proof (sample) of the final design</span>
-        <span className="sm:hidden md:block">A proof (sample) of the final design is provided to the</span>
+                <span className="sm:hidden md:block">A proof (sample) of the final design is provided to the</span>
               </li>
             ))}
           </ul>
@@ -39,7 +39,7 @@ export default function WhyWeAre() {
           <img
             src="/WhyWeAre_2.png"
             alt="Sample 2"
-            className="mt-12 md:mt-24 w-full md:w-3/4 md:h-auto"
+            className="mt-12 w-full md:mt-24 md:w-3/4 md:h-auto"
           />
         </div>
       </div>

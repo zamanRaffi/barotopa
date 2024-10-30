@@ -20,7 +20,8 @@ const Packaging = () => {
             {/* Desktop view - grid layout */}
             <div className="sm:hidden md:flex md:flex-wrap md:items-center md:px-14">
 
-                <div className='w-1/2 mb-4 px-10 mb-12'>
+                   {/* 1st card */}
+                <div className='w-1/2 px-10 mb-12'>
                     <img src='/PeakSocialTonics.png'
                       className='w-[860px]'
                     />
@@ -33,6 +34,7 @@ const Packaging = () => {
                     </div>
                 </div>
 
+                  {/* 2nd card */}
                 <div className='w-1/2 px-10 mb-12'>
                     <img src='/TràSữaHòaTanWINGS-BlackMilkTea.png'
                          className='w-[860px]'
@@ -46,6 +48,7 @@ const Packaging = () => {
                     </div>
                 </div>
 
+                 {/* 3rd card card */}
                 <div className='w-1/2 px-10'>
                     <img src='/CloudNine_Bold,ModernPeriodBranding.png'
                          className='w-[860px]'
@@ -58,7 +61,8 @@ const Packaging = () => {
                     </p>
                     </div>
                 </div>
-
+                  
+                  {/* 4rd card */}
                 <div className='w-1/2 px-10 '>
                     <img src='/TANGERINEANDYOU.png'
                          className='w-[860px]'

@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../component/Accreditation/Hero'
 
 const page = () => {
   return (
     <div>
-      Accreditation page
+      <Hero/>
     </div>
   )
 }
