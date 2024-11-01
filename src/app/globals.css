@@ -59,3 +59,8 @@ body {
   scrollbar-color: #a18cd1 #ff9a9e; /* Thumb color and track color */
 }
 
+
+/* Custom inner shadow */
+.shadow-inner-button {
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

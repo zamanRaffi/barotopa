@@ -31,7 +31,7 @@ const CustomCursor = () => {
 
     // Select all elements that should hide the custom cursor
     const pointerElements = document.querySelectorAll(
-      'a, button, [role="button"], input, textarea, select, label'
+      'a, button, [role="button"], input, textarea, select, label, [data-nextjs-link]'
     );
 
     pointerElements.forEach((el) => {
@@ -84,7 +84,7 @@ const CustomCursor = () => {
       >
         <path
           d="M11 21L4 4L21 11L14.7353 13.6849C14.2633 13.8872 13.8872 14.2633 13.6849 14.7353L11 21Z"
-          stroke="#ffffff" // White stroke color
+          stroke="#ffffff"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
