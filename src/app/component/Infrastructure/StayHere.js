@@ -1,0 +1,16 @@
+import React from "react";
+
+const StayHere = () => {
+  return (
+    <div className="bg-cover bg-center text-white px-6 py-16 mt-6 mb-6 w-full h-screen md:w-full md:mt-24 md:mb-28 bg-[url('/WarehouseOperation.png')] md:bg-[url('/StayHereLg.png')] ">
+      <h2 className="text-4xl font-bold mb-8 leading-tight md:text-7xl md:mt-4 md:ml-2 md:leading-tight">
+      Stay here to watch <br/> over your project.
+      </h2>
+      <p  className="md:w-4/12 md:text-2xl md:mt-4 md:ml-2 md:leading-normal">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+      </p>
+    </div>
+  );
+};
+
+export default StayHere;

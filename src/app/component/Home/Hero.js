@@ -10,17 +10,17 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-85"></div>
 
         {/* Logo */}
-        <div className="mt-[140px] flex justify-end z-10 md:hidden">
+        <div className="mt-[185px] flex justify-end z-10 md:hidden">
           <Image
             src="/Frame _1171277434.png"
             alt="Barotopa Printers Limited Logo"
-            width={230}
-            height={117}
+            width={176.3}
+            height={116.52}
           />
         </div>
 
         {/* Title and Description */}
-        <div className="mt-[260px] mb-4 z-10 md:mt-[400px]">
+        <div className="mt-[235px] mb-4 z-10 md:mt-[400px]">
           <h1 className="text-3xl font-extrabold md:text-7xl md:px-6">
             Excellence in <br /> printing & packaging
           </h1>

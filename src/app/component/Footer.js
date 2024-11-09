@@ -11,7 +11,7 @@ import { LuArrowDownToLine, LuMapPin } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="text-white px-5 md:px-12 bg-black py-10">
+    <footer id="footer" className="text-white px-5 md:px-12 py-10">
       {/* Logo section */}
       <div className="mb-6 text-center md:text-left">
         <Image width={180} height={40} src="/Layer_1.png" alt="Barotopa Logo" />

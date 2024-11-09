@@ -62,7 +62,7 @@ const OurPeople = () => {
       </h2>
 
       {/* Desktop view - grid layout */}
-      <div className="sm:hidden lg:flex px-20  ">
+      <div className="sm:hidden md:flex px-20  ">
         <Swiper
           spaceBetween={-5}
           slidesPerView="auto"
@@ -76,7 +76,7 @@ const OurPeople = () => {
           {teamMembers.map((member, index) => (
             <SwiperSlide
               key={index}
-              className="w-72 p-4 rounded-lg odd:pt-12"
+              className="w-72 p-4 rounded-md odd:pt-10"
               style={{ width: "390px" }}
             >
               <img
@@ -92,7 +92,7 @@ const OurPeople = () => {
       </div>
 
       {/* Mobile view - Swiper slider */}
-      <div className="lg:hidden px-">
+      <div className="md:hidden px-">
         <Swiper
           spaceBetween={-10}
           slidesPerView="auto"
@@ -106,7 +106,7 @@ const OurPeople = () => {
           {teamMembers.map((member, index) => (
             <SwiperSlide
               key={index}
-              className="p-4 rounded-lg"
+              className="p-4 rounded-md"
               style={{ width: "320px" }} // Controls the width of each slide
             >
               <img

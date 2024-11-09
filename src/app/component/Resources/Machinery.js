@@ -66,7 +66,7 @@ const Machinery = () => {
       </div>
       <div className="flex justify-center mt-8">
         <Link href="/Machinery">
-          <button className="bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-32 py-2 md:w-40 hover:bg-[#2c2c2c] hover:border-[#00c7f0] transition duration-200">
+          <button className="bg-[#1d1d1d] border border-1 border-[#00aeef] text-center rounded-full w-[134px] h-[44px] md:w-[218px] md:h-[68px] md:w-40 hover:bg-[#2c2c2c] hover:border-[#00c7f0] transition duration-200">
             See All
           </button>
         </Link>
