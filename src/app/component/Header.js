@@ -22,7 +22,7 @@ const Header = () => {
         />
 
         {/* Mobile Menu Button */}
-        <nav className="md:hidden">
+        <nav className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
             className="text-white px-4 py-2 rounded-lg"
@@ -44,7 +44,7 @@ const Header = () => {
         </nav>
 
         {/* Desktop Menu Links */}
-        <nav className="sm:hidden md:flex space-x-8 items-center">
+        <nav className="sm:hidden lg:flex space-x-8 items-center">
           <Link href="/" className="hover:text-[#797979]">
             Home
           </Link>
@@ -72,7 +72,7 @@ const Header = () => {
 
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[rgba(29,29,29,0.9)] text-white p-4 flex flex-col space-y-4">
+        <div className="lg:hidden bg-[rgba(29,29,29,0.9)] text-white p-4 flex flex-col space-y-4">
           <Link
             href="/"
             onClick={toggleMobileMenu}
@@ -107,6 +107,13 @@ const Header = () => {
             className="hover:text-[#797979]"
           >
             Accreditation
+          </Link>
+          <Link
+            href="/ContactUs"
+            scroll={true}
+            className="bg-[#00aeef] text-white text-center w-2/12 mx-auto px-6 py-2 rounded-full hover:text-black hover:bg-[#33bef2]"
+          >
+            Contact us
           </Link>
         </div>
       )}

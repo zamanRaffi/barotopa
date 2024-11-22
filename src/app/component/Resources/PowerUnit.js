@@ -12,7 +12,7 @@ export default function PowerUnit() {
         {/* Text Section */}
         <div className="md:text-left md:w-full md:order-2 md:mt-24">
           {/* Heading */}
-          <h2 className="text-4xl font-bold mb-20 md:text-6xl md:mb-16 md:mt-6">
+          <h2 className="text-4xl text-[#00aeff] font-bold mb-20 md:text-6xl md:mb-16 md:mt-6">
             Our Power Unit
           </h2>
 

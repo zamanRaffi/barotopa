@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const MissionAndVision = () => {
   return (
-    <section className="text-white py-12 px-6 mb-6 w-full md:mt-14">
+    <section className="text-white py-12 px-6 mb-6 w-full lg:mt-14">
       {/* Our Mission Section */}
-      <div className="mb-20 md:flex md:items-center md:px-16">
+      <div className="mb-20 md:flex md:items-center md:px-3 lg:flex lg:items-center lg:px-16">
         <div className="w-full">
           <div className="mb-8">
             <Image
@@ -15,10 +15,10 @@ const MissionAndVision = () => {
               height={60}
             />
           </div>
-          <div className="md:w-10/12">
-            <h2 className="text-4xl font-semibold">Our Mission</h2>
+          <div className="md:w-9/12 lg:w-10/12">
+            <h2 className="text-4xl font-semibold text-[#00aeff] md:text-4xl lg:text-5xl">Our Mission</h2>
 
-            <p className="mt-4 text-[#797979] md:text-lg">
+            <p className="mt-4 text-[#797979] md:text-base lg:text-lg">
               “Our mission at Barotopa Printing & Packaging Limited is to
               provide unparalleled one-stop printing and packaging solutions
               characterized by excellence and innovation. We are committed to
@@ -32,7 +32,7 @@ const MissionAndVision = () => {
         </div>
 
         {/* Display image for small screens */}
-        <div className="mt-6 sm:block md:hidden">
+        <div className="mt-6 sm:block md:hidden lg:hidden">
           <Image
             src="/missionCard.png"
             alt="Mission Card"
@@ -42,7 +42,7 @@ const MissionAndVision = () => {
         </div>
 
         {/* Display image for medium and larger screens */}
-        <div className="mt-6 w-11/12 sm:hidden md:block ">
+        <div className="mt-6 w-11/12 sm:hidden md:block md:mt-32 lg:mt-24 lg:w-full lg:block ">
           <Image
             src="/OurMissionCardForLs.png"
             alt="Mission Card"
@@ -52,10 +52,11 @@ const MissionAndVision = () => {
         </div>
       </div>
 
+
       {/* Our Vision Section */}
-      <div className="md:flex md:px-16">
-        <div className=" w-full md:w-9/12 md:order-2 md:mt-9">
-          <div className="mb-8">
+      <div className="md:flex md:items-center md:px-3 lg:flex lg:items-center lg:px-16">
+        <div className="w-full md:order-2 lg:order-2">
+          <div className="mb-8 md:ml-20">
             <Image
               src="/visionLogo.png"
               alt="Mission Icon"
@@ -63,10 +64,11 @@ const MissionAndVision = () => {
               height={60}
             />
           </div>
-          <div className="md:w-9/12">
-            <h2 className="text-4xl font-semibold">Our Vision</h2>
+          <div className="md:w-9/12 md:ml-20 lg:w-10/12">
+            <h2 className="text-4xl text-[#00aeff] font-bold 
+           ">Our Vision</h2>
 
-            <p className="mt-4 text-[#797979] md:text-lg">
+            <p className="mt-4 text-[#797979] md:text-base lg:text-lg">
               "Barotopa Printing & Packaging Limited aspires to be the premier
               and most trusted printing and packaging company in Bangladesh. We
               aim to achieve this through relentless innovation, uncompromising
@@ -76,7 +78,7 @@ const MissionAndVision = () => {
         </div>
 
         {/* Display image for small screens */}
-        <div className="mt-6 sm:block md:hidden">
+        <div className="mt-6 sm:block md:hidden lg:hidden">
           <Image
             src="/visionCard.png"
             alt="Mission Card"
@@ -86,7 +88,7 @@ const MissionAndVision = () => {
         </div>
 
         {/* Display image for medium and larger screens */}
-        <div className="py-2 w-11/12 sm:hidden md:block ">
+        <div className="mt-6 w-11/12 sm:hidden md:block md:mt-32 lg:w-full lg:block">
           <Image
             src="/OurVisionCardForLs.png"
             alt="Mission Card"

@@ -21,6 +21,40 @@ body {
   cursor: none !important;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  gap: 5.5rem; /* Adjust spacing */
+  animation: marquee 15s linear infinite; /* 10s duration, smooth infinite loop */
+  will-change: transform;
+}
+
+
+/* Animation for Right-to-Left Scrolling */
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  gap: 5.5rem; /* Adjust spacing */
+  animation: marquee-reverse 15s linear infinite; /* 10s duration */
+  will-change: transform;
+}
+
 
 
 /* for Custom Cursor */

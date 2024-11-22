@@ -16,7 +16,7 @@ const teamMembers = [
 const LogisticsAndTransportationService = () => {
   return (
     <div className="text-white py-12">
-      <h2 className="text-4xl font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-16">
+      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-16">
         Logistics & Transportation <br className="md:hidden" /> Service
       </h2>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Machinery = () => {
   return (
     <div className="px-6 py-10">
-      <h2 className="text-4xl font-bold mb-8 md:text-center md:text-5xl md:mb-16">
+      <h2 className="text-4xl text-[#00aeff] font-bold mb-8 md:text-center md:text-5xl md:mb-16">
         Our Machinery
       </h2>
       {/* Desktop view - grid layout */}

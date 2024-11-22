@@ -55,7 +55,7 @@ const OurPeople = () => {
   return (
     <div className="text-white py-12">
       <h2
-        className="text-4xl font-bold mb-6 px-5 md:text-center md:text-5xl
+        className="text-4xl text-[#00aeff] font-bold mb-6 px-5 md:text-center md:text-5xl
             md:mb-16"
       >
         Our People

@@ -33,8 +33,8 @@ const teamMembers = [
 
 const Packaging = () => {
   return (
-    <div className="text-white py-12">
-      <h2 className="text-4xl font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-12">
+    <div className="text-white px-6 md:px-44 md:py-20 md:mb-10">
+      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-16">
         Packaging
       </h2>
 
