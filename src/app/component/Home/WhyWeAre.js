@@ -6,7 +6,7 @@ export default function WhyWeAre() {
     <div
       className="bg-cover bg-center text-white py-10 px-6 mb-14 lg:px-16 "
       style={{
-        backgroundImage: "url('/Exhibition.png')",
+        backgroundImage: "url('/Rectangle_34627329 (4).png')",
       }}
     >
       <div className="bg-opacity-50 rounded-lg md:flex md:justify-evenly md:items-start lg:flex lg:justify-evenly lg:items-start">

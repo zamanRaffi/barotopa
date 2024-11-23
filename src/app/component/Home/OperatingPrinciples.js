@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OperatingPrinciples = () => {
   return (
-    <section className="text-white px-6 lg:py-12 lg:mb-10">
+    <section className="text-white px-6 mb-20  lg:py-12">
       <h1 className="text-4xl text-[#00aeff] leading-tight font-bold mb-6 px-5 md:text-center md:text-4xl
             md:mb-10 lg:text-center lg:text-5xl
             lg:mb-16">
@@ -11,7 +11,7 @@ const OperatingPrinciples = () => {
       </h1>
 
       {/* Commitment to Quality Section */}
-      <div className="mb-20 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-28">
+      <div className="mb-10 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-28">
         {/* Display image for small screens */}
         <div className="mt-6 sm:block md:hidden lg:hidden">
           <Image
@@ -45,7 +45,7 @@ const OperatingPrinciples = () => {
       </div>
 
       {/* Mastery of Innovation Section */}
-      <div className="mb-20 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-20">
+      <div className="mb-10 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-20">
         {/* Display image for small screens */}
         <div className="mt-6 sm:block md:hidden lg:hidden">
           <Image
@@ -77,7 +77,7 @@ const OperatingPrinciples = () => {
       </div>
 
       {/* Your Satisfaction First Section*/}
-      <div className="mb-20 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-28">
+      <div className="mb-10 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-28">
         {/* Display image for small screens */}
         <div className="mt-6 ml-1 lg:order-2 sm:block md:hidden lg:hidden">
           <Image
@@ -109,7 +109,7 @@ const OperatingPrinciples = () => {
       </div>
 
       {/* Knowledge and Expertise Section */}
-      <div className="mb-20 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-20">
+      <div className="mb-10 md:flex md:items-center md:mt-10 lg:flex lg:items-center lg:px-8 lg:mt-12 lg:ml-20">
         {/* Display image for small screens */}
         <div className="mt-6 sm:block md:hidden lg:hidden">
           <Image

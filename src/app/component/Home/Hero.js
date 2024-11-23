@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="text-white mb-3 flex flex-col">
+    <section className="text-white mb-12 flex flex-col">
       {/* Background Section with Gradient Overlay */}
       <div className="relative px-4 bg-cover bg-right flex flex-col bg-[url('/Exhibition.png')] lg:bg-[url('/ExhibitionCenterOfSherbrookeForLs.png')]">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-85"></div>
 
         {/* Logo */}
-        <div className="mt-[185px] flex justify-end z-10 md:hidden lg:hidden">
+        <div className="block mt-[185px] flex justify-end z-10 md:hidden lg:hidden">
           <Image
             src="/Frame _1171277434.png"
             alt="Barotopa Printers Limited Logo"
@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Text */}
-      <div className="px-6 mt-8 md:w-9/12 md:mx-auto md:mt-20 md:mb-14 lg:w-9/12 lg:mx-auto lg:mt-24 lg:mb-20">
+      <div className="px-6 mt-16 md:w-9/12 md:mx-auto md:mt-20 md:mb-14 lg:w-9/12 lg:mx-auto lg:mt-24 lg:mb-20">
         <h1 className="text-[#00aeef] text-4xl mt-4 mb-3 md:text-5xl lg:text-7xl lg:mb-14">
           About Barotopa
         </h1>

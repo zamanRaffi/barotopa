@@ -4,32 +4,49 @@ import { useEffect, useState } from 'react';
 
 const CustomCursor = () => {
   const [isHidden, setIsHidden] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const cursor = document.getElementById('custom-cursor');
-    let cursorX = 0, cursorY = 0, mouseX = 0, mouseY = 0;
+    const updateScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // `sm` breakpoint: less than 640px
+    };
 
-    // Update cursor position based on mouse movement
+    updateScreenSize(); // Check on mount
+    window.addEventListener('resize', updateScreenSize);
+
+    // Cleanup event listener
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      setIsHidden(true); // Hide cursor on small screens
+      return;
+    }
+
+    const cursor = document.getElementById('custom-cursor');
+    let cursorX = 0,
+      cursorY = 0,
+      mouseX = 0,
+      mouseY = 0;
+
     const handleMouseMove = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
     };
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Smooth cursor movement
     const animateCursor = () => {
-      cursorX += (mouseX - cursorX) * 0.45;
-      cursorY += (mouseY - cursorY) * 0.45;
+      cursorX += (mouseX - cursorX) * 1;
+      cursorY += (mouseY - cursorY) * 1;
       cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
       requestAnimationFrame(animateCursor);
     };
     animateCursor();
 
-    // Hide custom cursor on interactive elements
     const handleMouseEnter = () => setIsHidden(true);
     const handleMouseLeave = () => setIsHidden(false);
 
-    // Select all elements that should hide the custom cursor
     const pointerElements = document.querySelectorAll(
       'a, button, [role="button"], input, textarea, select, label, [data-nextjs-link]'
     );
@@ -39,22 +56,20 @@ const CustomCursor = () => {
       el.addEventListener('mouseleave', handleMouseLeave);
     });
 
-    // Hide custom cursor when leaving the viewport
     const handleMouseLeaveViewport = (e) => {
       if (
-        e.clientY <= 0 || // Top
-        e.clientX <= 0 || // Left
-        e.clientX >= window.innerWidth || // Right
-        e.clientY >= window.innerHeight // Bottom
+        e.clientY <= 0 ||
+        e.clientX <= 0 ||
+        e.clientX >= window.innerWidth ||
+        e.clientY >= window.innerHeight
       ) {
         setIsHidden(true);
       }
     };
 
     document.addEventListener('mouseleave', handleMouseLeaveViewport);
-    document.addEventListener('mouseenter', () => setIsHidden(false)); // Show on re-enter
+    document.addEventListener('mouseenter', () => setIsHidden(false));
 
-    // Cleanup event listeners
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseleave', handleMouseLeaveViewport);
@@ -64,7 +79,9 @@ const CustomCursor = () => {
         el.removeEventListener('mouseleave', handleMouseLeave);
       });
     };
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) return null; // Do not render on small screens
 
   return (
     <div
@@ -74,7 +91,6 @@ const CustomCursor = () => {
       }`}
       style={{ width: '22px', height: '22px' }}
     >
-      {/* Inline SVG for the custom cursor with white color */}
       <svg
         width="100%"
         height="100%"

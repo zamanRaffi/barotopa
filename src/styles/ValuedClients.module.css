@@ -1,0 +1,47 @@
+/* Forward Scrolling */
+.scrollingContainer {
+  display: flex;
+  gap: 30px; /* Space between images */
+  animation: scroll-forward 16s linear infinite;
+  width: max-content; /* Ensure the container fits all images */
+}
+
+@keyframes scroll-forward {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reverse Scrolling */
+.scrollingContainerReverse {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scroll-reverse 16s linear infinite;
+  width: max-content; /* Ensure the container fits all images */
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-50%); /* Start at the end of the duplicated list */
+  }
+  to {
+    transform: translateX(0%); /* Move back to the beginning */
+  }
+}
+
+/* Common Styles for Images */
+.scrollingContainer img,
+.scrollingContainerReverse img {
+  flex-shrink: 0;
+  height: 75px; 
+  width: auto; 
+
+ 
+  @media (max-width: 640px) {
+    height: 40px; /* Smaller height for mobile */
+    gap: 10px; /* Reduce gap between images */
+  }
+}

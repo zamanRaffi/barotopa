@@ -35,12 +35,12 @@ const teamMembers = [
 const GraphicsDesignConsultancy = () => {
   return (
     <div className="text-white py-12">
-      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-20">
+      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 md:text-4xl lg:text-center lg:text-6xl lg:mb-20">
         Graphics Design Consultancy
       </h2>
 
       {/* Desktop view - grid layout */}
-      <div className="sm:hidden md:flex md:items-center md:px-14">
+      <div className="sm:hidden lg:flex lg:items-center lg:px-14">
         {/* 1st card */}
         <div className="w-1/2 mb-4 px-10 mb-12">
           <img src="/GraphicsConsultancy.png" className="w-[860px]" />
@@ -49,7 +49,7 @@ const GraphicsDesignConsultancy = () => {
             Printing and typesetting industry.
           </h2>
           <div className="flex justify-between items-center px-4">
-            <p className="w-3/5 text-[#797979] text-md mt-5">
+            <p className="w-3/5 text-[#797979] text-lg mt-5">
               A proof (sample) of the final design is provided to the customer
               for approval before mass production. Any corrections or...
             </p>
@@ -71,7 +71,7 @@ const GraphicsDesignConsultancy = () => {
             Printing and typesetting industry.
           </h2>
           <div className="flex justify-between items-center px-4">
-            <p className="w-3/5 text-[#797979] text-md mt-5">
+            <p className="w-3/5 text-[#797979] text-lg mt-5">
               A proof (sample) of the final design is provided to the customer
               for approval before mass production. Any corrections or...
             </p>
@@ -108,7 +108,7 @@ const GraphicsDesignConsultancy = () => {
                 alt={member.name}
                 className="w-full  object-cover"
               />
-              <h3 className="text-md font-semibold mt-4">{member.name}</h3>
+              <h3 className="text-lg font-semibold mt-4">{member.name}</h3>
               <p className="text-[#797979]">{member.title}</p>
             </SwiperSlide>
           ))}

@@ -13,6 +13,7 @@ const Header = () => {
   return (
     <div className="bg-[rgba(29,29,29,0.5)] text-white w-full">
       <header className="p-6 flex justify-between items-center">
+        <Link href="/">
         <Image
           width={150}
           height={150}
@@ -20,6 +21,7 @@ const Header = () => {
           alt="Barotopa Logo"
           className="h-12"
         />
+        </Link>
 
         {/* Mobile Menu Button */}
         <nav className="lg:hidden">
@@ -111,7 +113,7 @@ const Header = () => {
           <Link
             href="/ContactUs"
             scroll={true}
-            className="bg-[#00aeef] text-white text-center w-2/12 mx-auto px-6 py-2 rounded-full hover:text-black hover:bg-[#33bef2]"
+            className="bg-[#00aeef] text-white text-center w-4/12 mx-auto px-6 py-2 rounded-full hover:text-black hover:bg-[#33bef2]"
           >
             Contact us
           </Link>
