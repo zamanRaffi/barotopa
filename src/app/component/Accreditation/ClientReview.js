@@ -47,7 +47,7 @@ export default function ClientsReview() {
       
       {/* Testimonial Text */}
       <div className="mt-8 text-2xl">
-        <p className='w-[60%] md:w-[36%] lg:w-[30%] mx-auto'>{testimonials[current].text}</p>
+        <p className='w-[60%] lg:w-[36%] lg:w-[30%] mx-auto'>{testimonials[current].text}</p>
       </div>
 
  <div className="flex justify-around mt-14">

@@ -30,7 +30,7 @@ export default function BlogPage() {
         </header>
   
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-14">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 px-14">
 
         {/* Left Side with One Blog Post */}
         <div className="col-span-2">
@@ -38,9 +38,9 @@ export default function BlogPage() {
               <Image src={blogPosts[3].imgSrc} alt={blogPosts[3].title} width={884} height={541.1} />
             </div>
             <div className="w-full py-4">
-            <p className="text-[#d9d9d9] text-md mb-6">{blogPosts[3].author}</p>
+            <p className="text-[#d9d9d9] text-lg mb-6">{blogPosts[3].author}</p>
               <h3 className="text-xl font-semibold w-7/12 leading-normal mb-4">{blogPosts[3].title}</h3>
-              <p className="text-[#cfcfcf] text-md w-9/12">{blogPosts[3].description}</p>
+              <p className="text-[#cfcfcf] text-lg w-9/12">{blogPosts[3].description}</p>
             </div>
             <div className='flex mt-1'>
                 <button className='bg-[#1f1f1f] w-[106.5px] h-[40px] rounded-full mr-3'>
@@ -54,16 +54,16 @@ export default function BlogPage() {
         </div>
 
               {/* Right Side with Three Blog Posts */}
-              <div className="col-span-1 md:col-span-2 ml-4">
+              <div className="col-span-1 lg:col-span-2 ml-4">
   {blogPosts.slice(0, 3).map(post => (
     <div key={post.id} className="flex mb-6 w-full">
       <div className='w-10/12'>
         <Image src={post.imgSrc} alt={post.title} width={383.22} height={239.7} />
       </div>
       <div>
-        <p className="text-[#d9d9d9] text-md mb-2">{post.author}</p>
+        <p className="text-[#d9d9d9] text-lg mb-2">{post.author}</p>
         <h3 className="text-2xl w-10/12 font-semibold leading-tight mb-3">{post.title}</h3>
-        <p className="text-[#d9d9d9] text-md mb-4">{post.description}</p>
+        <p className="text-[#d9d9d9] text-lg mb-4">{post.description}</p>
 
         {/* Button Section */}
         <div className="flex">
@@ -86,16 +86,16 @@ export default function BlogPage() {
 
       <hr className="mb-8 mt-16 border-b-1 border-[#272727] w-full" />
              
-      <div  className="grid grid-cols-1 md:grid-cols-3 gap-2 py-8 px-8">
+      <div  className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-8 px-8">
       {blogPosts.slice(4, 10).map(post => (
     <div key={post.id} className="mb-6 w-full">
       <div>
         <Image src={post.imgSrc} alt={post.title} width={578.67} height={318} />
       </div>
       <div>
-        <p className="text-[#d9d9d9] text-md mb-4 mt-6">{post.author}</p>
+        <p className="text-[#d9d9d9] text-lg mb-4 mt-6">{post.author}</p>
         <h3 className="text-2xl w-8/12 font-semibold leading-tight mb-2">{post.title}</h3>
-        <p className="text-[#d9d9d9] text-md mb-4 w-10/12">{post.description}</p>
+        <p className="text-[#d9d9d9] text-lg mb-4 w-10/12">{post.description}</p>
 
     
       </div>

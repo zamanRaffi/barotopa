@@ -4,7 +4,7 @@ const FactoryUnit = () => {
   return (
     <section className="mb-12 py-12">
       <div>
-        <h2 className="text-4xl text-[#00aeef] font-bold mb-8 md:text-center md:text-6xl md:mb-6">
+        <h2 className="text-4xl text-[#00aeef] font-bold mb-8 lg:text-center lg:text-6xl lg:mb-6">
           Factory Unit
         </h2>
         <p className="text-2xl text-center w-1/2 mx-auto">
@@ -14,7 +14,7 @@ const FactoryUnit = () => {
         </p>
       </div>
 
-      <div className="md:flex md:justify-center md:items-center md:mt-12 md:py-6 md:px-10 md:ml-8">
+      <div className="lg:flex lg:justify-center lg:items-center lg:mt-12 lg:py-6 lg:px-10 lg:ml-8">
         {/* 1st Card */}
         <div>
           <div>
@@ -28,8 +28,8 @@ const FactoryUnit = () => {
           </div>
 
           <div className="mt-8">
-            <h2 className="md:text-3xl">Proof Your Work Thoroughly</h2>
-            <p className="mt-4 md:text-lg md:w-10/12">
+            <h2 className="lg:text-3xl">Proof Your Work Thoroughly</h2>
+            <p className="mt-4 lg:text-lg lg:w-10/12">
               Exploring the climate and cost- of-living crises through food
               waste and community Exploring the climate and cost- of-living
               crises through
@@ -50,8 +50,8 @@ const FactoryUnit = () => {
           </div>
 
           <div className="mt-8">
-            <h2 className="md:text-3xl">Climateshot Investors Coalition</h2>
-            <p className="mt-4 md:text-lg md:w-11/12">
+            <h2 className="lg:text-3xl">Climateshot Investors Coalition</h2>
+            <p className="mt-4 lg:text-lg lg:w-11/12">
               Exploring the climate and cost- of-living crises through food
               waste and community Exploring the climate and cost- of-living
               crises through
@@ -73,8 +73,8 @@ const FactoryUnit = () => {
           </div>
 
           <div className="mt-8">
-            <h2 className="md:text-3xl">Climateshot Investors Coalition</h2>
-            <p className="mt-4 md:text-lg md:w-11/12">
+            <h2 className="lg:text-3xl">Climateshot Investors Coalition</h2>
+            <p className="mt-4 lg:text-lg lg:w-11/12">
               Exploring the climate and cost- of-living crises through food
               waste and community Exploring the climate and cost- of-living
               crises through

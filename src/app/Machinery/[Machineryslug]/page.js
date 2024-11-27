@@ -15,7 +15,7 @@ export default async function MachineryDetail({ params }) {
   }
 
   return (
-    <section className="text-white min-h-screen py-16 mt-8 px-6 md:px-20 lg:px-40">
+    <section className="text-white min-h-screen py-16 mt-8 px-6 lg:px-20 lg:px-40">
       <div className="max-w-5xl mx-auto">
         {/* Header section */}
         <header className="mb-6">

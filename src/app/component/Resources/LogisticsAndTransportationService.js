@@ -16,12 +16,12 @@ const teamMembers = [
 const LogisticsAndTransportationService = () => {
   return (
     <div className="text-white py-12">
-      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 md:text-center md:text-5xl md:mb-16">
-        Logistics & Transportation <br className="md:hidden" /> Service
+      <h2 className="text-4xl text-[#00aeff] font-bold mb-6 px-4 lg:text-center lg:text-5xl lg:mb-16">
+        Logistics & Transportation <br className="lg:hidden" /> Service
       </h2>
 
       {/* Desktop view - grid layout */}
-      <div className="sm:hidden md:flex md:items-center md:px-14">
+      <div className="sm:hidden lg:flex lg:items-center lg:px-14">
         {/* 1st card */}
         <div className="w-1/2 mb-4 px-10 mb-12">
           <img src="/Transportation_1ForLs.png" className="w-[884px]" />
@@ -40,7 +40,7 @@ const LogisticsAndTransportationService = () => {
       </div>
 
       {/* Mobile view - Swiper slider */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Swiper
           spaceBetween={-10}
           slidesPerView="auto"
@@ -62,7 +62,7 @@ const LogisticsAndTransportationService = () => {
                 alt={member.name}
                 className="w-full  object-cover"
               />
-              <h3 className="text-md font-semibold mt-4">{member.name}</h3>
+              <h3 className="text-lg font-semibold mt-4">{member.name}</h3>
               <p className="text-[#797979]">{member.title}</p>
             </SwiperSlide>
           ))}
