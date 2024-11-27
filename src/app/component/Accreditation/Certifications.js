@@ -37,7 +37,7 @@ const Certifications  = () => {
   return (
     <div className="text-white py-12">
       <h2
-        className="text-4xl text-[#00aeef] font-bold mb-6 px-5 lg:text-center lg:text-5xl
+        className="text-4xl text-[#00aeef] font-bold mb-6 px-5 md:text-center  lg:text-center lg:text-5xl
             lg:mb-16"
       >
         Certifications

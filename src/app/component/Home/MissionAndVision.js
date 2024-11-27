@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MissionAndVision = () => {
   return (
-    <section className="text-white py-12 px-6 mb-6 w-full lg:mt-14">
+    <section className="text-white py-12 px-5 mb-6 w-full lg:mt-14">
       {/* Our Mission Section */}
       <div className="mb-20 md:flex md:items-center md:px-3 lg:flex lg:items-center lg:px-16">
         <div className="w-full">

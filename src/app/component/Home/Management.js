@@ -68,7 +68,7 @@ const teamMembers = [
 
 const Management = () => {
   return (
-    <div className="text-white py-12 ">
+    <div className="text-white py-12">
       <h2
         className="text-4xl text-[#00aeff] font-bold mb-6 px-5 
         md:text-center md:text-4xl

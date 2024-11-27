@@ -13,7 +13,7 @@ const ValuedClients = () => {
   ];
 
   return (
-    <div className="py-2 px-6 mb-8 lg:px-16 overflow-hidden">
+    <div className="py-2 px-5 mb-8 lg:px-16 overflow-hidden">
       <h2 className="text-4xl text-[#00aeff] font-bold mb-12 md:text-center lg:text-5xl lg:mb-16">
         Valued Clients
       </h2>

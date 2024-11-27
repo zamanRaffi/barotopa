@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const OperatingPrinciples = () => {
   return (
-    <section className="text-white px-6 mb-20  lg:py-12">
-      <h1 className="text-4xl text-[#00aeff] leading-tight font-bold mb-6 px-5 md:text-center md:text-4xl
+    <section className="text-white px-5 mb-20 lg:py-12">
+      <h1 className="text-4xl text-[#00aeff] leading-tight font-bold mb-6  md:text-center
             md:mb-10 lg:text-center lg:text-5xl
             lg:mb-16">
         Our Operating Principles

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="text-white mb-12 flex flex-col">
       {/* Background Section with Gradient Overlay */}
-      <div className="relative px-4 bg-cover bg-right flex flex-col bg-[url('/Exhibition.png')] lg:bg-[url('/ExhibitionCenterOfSherbrookeForLs.png')]">
+      <div className="relative px-5 bg-cover bg-right flex flex-col bg-[url('/Exhibition.png')] lg:bg-[url('/ExhibitionCenterOfSherbrookeForLs.png')]">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-85"></div>
 
