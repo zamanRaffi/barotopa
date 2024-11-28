@@ -8,7 +8,7 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const updateScreenSize = () => {
-      setIsMobile(window.innerWidth < 768); // `sm` breakpoint: less than 640px
+      setIsMobile(window.innerWidth < 1024); // `sm` breakpoint: less than 640px
     };
 
     updateScreenSize(); // Check on mount

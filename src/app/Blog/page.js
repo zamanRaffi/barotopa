@@ -60,10 +60,10 @@ export default function BlogPage() {
       <div className='w-10/12'>
         <Image src={post.imgSrc} alt={post.title} width={383.22} height={239.7} />
       </div>
-      <div>
+      <div className='ml-3'>
         <p className="text-[#d9d9d9] text-lg mb-2">{post.author}</p>
         <h3 className="text-2xl w-10/12 font-semibold leading-tight mb-3">{post.title}</h3>
-        <p className="text-[#d9d9d9] text-lg mb-4">{post.description}</p>
+        <p className="text-[#d9d9d9] text-lg  mb-4">{post.description}</p>
 
         {/* Button Section */}
         <div className="flex">
