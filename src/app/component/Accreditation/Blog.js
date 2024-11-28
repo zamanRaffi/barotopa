@@ -39,7 +39,7 @@ export default function Blog() {
         </div>
         <div className="w-full py-8">
           <h3 className="text-2xl lg:mt-4 md:ml-5 md:text-3xl lg:text-4xl font-semibold leading-normal">{blogPosts[2].title}</h3>
-          <p className="mt-5 text-[#d9d9d9] md:mt-48 lg:mt-72 lg:ml-0 text-lg md:ml-5">{blogPosts[2].description}</p>
+          <p className="mt-5 text-[#d9d9d9] md:mt-72 lg:ml-0 text-lg md:ml-5">{blogPosts[2].description}</p>
         </div>
       </div>
     </div>
