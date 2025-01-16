@@ -23,57 +23,62 @@ const Footer = () => {
         <div>
           <div>
             {/* Office section */}
-            <h2 className="text-lg mb-5 font-semibold md:text-xl lg:text-2xl">Office</h2>
+            <h2 className="text-lg mb-5 font-semibold lg:text-2xl">Office</h2>
             <address className="not-italic text-[#848484] text-base lg:text-md lg:text-lg underline">
               43, Shilpacharya Zainul Abedin <br /> Sarak, Shantinagar, <br />
-              Dhaka-1217, Bangladesh
+              Dhaka-1217,Bangladesh
             </address>
           </div>
           
           {/* Social media icons */}
-          <div className="mt-6 order-1 md:mt-4 md:border-none lg:mt-12 lg:border-none sm:hidden md:block lg:block">
-            <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-5">Social</h2>
-            <div className="flex space-x-4 md:space-x-2">
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-500 border rounded-full border-[#292929] bg-[#171717]"
-              >
-                <FaFacebookF size={36} className="p-2" />
-              </Link>
-              <Link
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 border rounded-full border-[#292929] bg-[#171717]"
-              >
-                <FaInstagram size={36} className="p-2" />
-              </Link>
-              <Link
-                href="https://x.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-500 border rounded-full border-[#292929] bg-[#171717]"
-              >
-                <FaXTwitter size={36} className="p-2" />
-              </Link>
-              <Link
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-700 border rounded-full border-[#292929] bg-[#171717]"
-              >
-                <FaLinkedinIn size={36} className="p-2" />
-              </Link>
-            </div>
-          </div>
+          <div className="mt-6 order-1 md:mt-11 md:border-none lg:mt-12 lg:border-none sm:hidden md:block lg:block">
+  <h2 className="text-lg lg:text-2xl font-semibold mb-5">Social</h2>
+  <div className="flex space-x-5 md:space-x-1">
+    <Link
+      href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaFacebookF
+        className="p-2 hover:text-blue-500 border rounded-full border-[#292929] bg-[#171717] text-4xl lg:text-5xl"
+      />
+    </Link>
+    <Link
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaInstagram
+        className="p-2 hover:text-pink-500 border rounded-full border-[#292929] bg-[#171717] text-4xl lg:text-5xl"
+      />
+    </Link>
+    <Link
+      href="https://x.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaXTwitter
+        className="p-2 hover:text-gray-500 border rounded-full border-[#292929] bg-[#171717] text-4xl lg:text-5xl"
+      />
+    </Link>
+    <Link
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaLinkedinIn
+        className="p-2 hover:text-blue-700 border rounded-full border-[#292929] bg-[#171717] text-4xl lg:text-5xl"
+      />
+    </Link>
+  </div>
+</div>
+
         </div>
 
         {/* Quick links and PDF/Map buttons */}
         <div className="flex justify-between mt-7 md:order-3 md:px-0 md:mt-0 lg:order-3 lg:px-5 lg:mt-0">
           <div>
-            <h2 className="text-lg mb-4 md:text-xl lg:text-2xl font-semibold">
+            <h2 className="text-lg mb-4 lg:text-2xl font-semibold">
               Quick links
             </h2>
             <ul className="space-y-2 text-[#848484] text-base md:text-md lg:text-lg">
@@ -148,7 +153,7 @@ const Footer = () => {
         {/* Phone and Email section */}
         <div className="flex justify-between md:block lg:block text-[#848484] mt-7 md:mt-0 md:order-2 lg:mt-0 lg:order-2">
           <div className="text-base md:mb-24 md:text-md lg:mb-20 lg:text-lg">
-            <h2 className="text-lg text-white font-semibold mb-4 md:text-xl md:mb-4 lg:text-2xl lg:mb-2">
+            <h2 className="text-lg text-white font-semibold mb-4 md:mb-4 lg:text-2xl lg:mb-2">
               Phone
             </h2>
             <p>+88 01844520604</p>
@@ -156,7 +161,7 @@ const Footer = () => {
           </div>
 
           <div className="text-base lg:text-lg lg:mt-4">
-            <h2 className="text-lg text-white font-semibold mb-4 md:text-xl md:mb-4 lg:text-2xl lg:mb-2">
+            <h2 className="text-lg text-white font-semibold mb-4 md:mb-4 lg:text-2xl lg:mb-2">
               Email
             </h2>
             <p>
